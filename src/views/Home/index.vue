@@ -27,6 +27,9 @@
             <!-- 循环书籍 -->
             <Book v-for="(item, index) in books" :key="index" :data="item"></Book>
         </div>
+
+
+        
   <tab-bar/>
   </div>
 </template>
@@ -34,14 +37,14 @@
 <script>
 import Header from 'components/Header'
 import TabBar from 'components/TabBar'
-import BookList from 'components/BookList'
+import Book from 'components/Book'
 import Search from 'components/Search'
 
 export default {
   components: { 
     Header,
     TabBar,
-    BookList,
+    Book,
     Search
     },
 //数据

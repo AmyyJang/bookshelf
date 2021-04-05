@@ -1,6 +1,10 @@
 <template>
   <div class="search">
-      <input type="text" v-model="msg" @keyup.enter="showSearchResult" placeholder="请输入搜索关键字">     
+      <div class="search-content">
+        <i class="iconfont icon-chazhao"></i>
+        <input type="text" v-model="msg" @keyup.enter="showSearchResult" placeholder="请输入搜索关键字">
+      </div>
+           
     </div>
 </template>
 
@@ -28,17 +32,28 @@ export default {
     background-color: #fff;
     padding: 10px 20px;
     display: flex;
-    input {
-      font-size: 14px;
-      background-color: #efefef;
-      border: none;
-      outline: none;
-      padding: 10px 20px;
-      border-radius: 18px;
-      display: block;
-      width: 100%;
+    .search-content{
       flex: 1;
-      color: #666;
+      position: relative;
+      i{
+        position: absolute;
+        right: 18px;
+        top: 5px;
+        font-size: 24px;
+        color: #7d7d7d;
+      }
+      input {
+        font-size: 14px;
+        background-color: #efefef;
+        border: none;
+        outline: none;
+        padding: 10px 20px;
+        border-radius: 18px;
+        display: block;
+        width: 100%;
+        flex: 1;
+        color: #666;
+    }
   }
 }
 </style>
