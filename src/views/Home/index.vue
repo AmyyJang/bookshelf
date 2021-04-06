@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <!-- 头部bar -->
-    <Header/>
+    <Header title="优腾爱读书"/>
     <!-- 首页---{{$store.state.search}} -->
     <Search/>
       <!-- 分类模块 -->

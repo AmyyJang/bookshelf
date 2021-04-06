@@ -1,6 +1,6 @@
 <template>
   <div class="List">
-    <Header/>
+    <Header title="优腾书单"/>
      
      <div class="list-content">
        <ul class="list-menu">

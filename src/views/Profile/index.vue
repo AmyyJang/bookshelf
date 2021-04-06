@@ -1,6 +1,6 @@
 <template>
   <div class="profile">
-    <Header/>
+    <Header title="我的"/>
       <h1>这是个人profile页面</h1>
       <tab-bar/>
   </div>
@@ -18,6 +18,6 @@ export default {
 }
 </script>
 
-<style>
+<style
 
 </style>

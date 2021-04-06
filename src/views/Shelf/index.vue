@@ -1,6 +1,6 @@
 <template>
   <div class="shelf">
-    <Header/>
+    <Header title="优腾书架"/>
     <Search/>
       <ul class="order">
           <li v-for="(item,index) in orders" :key="index" @click="listOrder(item.id)">

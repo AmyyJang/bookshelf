@@ -1,12 +1,18 @@
 <template>
   <div class="header">
-    <div class="header-title"> 优腾爱读书</div>
+    <div class="header-title">{{title}}</div>
   </div>
 </template>
 
 <script>
 export default {
-    name:'Header'
+    name:'Header',
+    props: {
+      title: {
+        type: String,
+        default: "优腾爱读书"
+      }
+    }
 }
 </script>
 
